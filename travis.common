@@ -14,6 +14,7 @@ CMAKE_FLAGS="\
   -Wno-dev \
   ${GENERATOR} \
   ${TBB_CMAKE} \
+  -DCMAKE_DISABLE_FIND_PACKAGE_QuadMath=TRUE \
   -DBUILD_SHARED_LIBS=TRUE \
   -DCMAKE_INSTALL_PREFIX=$HOME/dune \
   -DCMAKE_BUILD_TYPE=DEBUG \
@@ -21,7 +22,7 @@ CMAKE_FLAGS="\
       -DDEBUG \
       -g3 \
       -ggdb \
-      -std=c++14  \
+      -std=c++17  \
       ${OPT} \
       -fPIC \
       -DDXT_DISABLE_LARGE_TESTS=1' \
@@ -33,4 +34,3 @@ CMAKE_FLAGS="\
     -DDUNE_PYTHON_ALLOW_GET_PIP=TRUE \
     -DDUNE_PYTHON_VIRTUALENV_SETUP=TRUE \
     -DDXT_TEST_PROCS=${DXT_TEST_PROCS}"
-
