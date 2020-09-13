@@ -7,6 +7,6 @@ DIR="$(cd "$(dirname ${BASH_SOURCE[0]})" ; pwd -P )"
 NAME="$(basename ${BASH_SOURCE[0]})"
 
 TYPE=RelWithDebInfo
-CXXFLAGS="-O2 -w -DDNDEBUG -DNDEBUG"
+CXXFLAGS="-O2 -g3 -ggdb -w -DDNDEBUG -DNDEBUG"
 
 source ${DIR}/base/clang

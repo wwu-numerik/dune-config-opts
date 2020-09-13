@@ -1,8 +1,7 @@
 [undefined]
 src:*/dune/uggrid/gm/gm.h
-src:*/dune/uggrid/parallel/dddif/initddd.cc
-src:*/dune/uggrid/parallel/ddd/mgr/typemgr.cc
 src:*/dune/uggrid/gm/enrol.cc
 src:*/dune/uggrid/gm/ugm.cc
 src:*tbb/task.h
+src:*tbb/internal/../task.h
 src:*tbb/parallel_reduce.h
