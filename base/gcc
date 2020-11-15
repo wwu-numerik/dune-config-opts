@@ -9,4 +9,6 @@ CXX=${CXX:-g++}
 CC=${CC:-gcc}
 F77=${F77:-gfortran}
 
+CXXFLAGS="${CXXFLAGS} -ftemplate-backtrace-limit=0"
+
 source ${DIR}/base/common
